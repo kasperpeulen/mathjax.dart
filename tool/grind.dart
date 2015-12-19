@@ -23,8 +23,8 @@ void analyze() {
 
 @Task()
 void test() {
-  final macPlatforms = ['dartium,firefox,chrome,safari'];
-  new TestRunner().test(platformSelector: macPlatforms);
+  final platforms = ['dartium,firefox,chrome'];
+  new TestRunner().test(platformSelector: platforms);
 }
 
 @Task('Apply dartfmt to all Dart source files')
