@@ -1,0 +1,15 @@
+name: mathjax
+description: Collection of useful functions for Directory objects.
+author: Kasper Peulen <kasperpeulen@gmail.com>
+homepage: https://github.com/kasperpeulen/mathjax.dart
+version: 0.0.0
+environment:
+  sdk: '>=1.13.0 <2.0.0'
+dependencies:
+  js: ^0.6.0
+dev_dependencies:
+  coverage: ^0.7.2
+  dart_dev: ^1.0.5
+  grinder: ^0.8.0+1
+  test: ^0.12.6+1
+  browser: '^0.10.0+2'

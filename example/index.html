@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dynamic Preview of Textarea with MathJax Content</title>
+        <!-- Copyright (c) 2012-2015 The MathJax Consortium -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <!--
+      |
+      |  This shows how to prevent the page from being displayed until after
+      |  MathJax has finished typesetting all the math. This avoids the
+      |  "flicker" that occurs as source TeX code is removed from the page and
+      |  then typeset.  You probably don't want to do this on a page with lots
+      |  of math.
+      |
+      |-->
+        <script type="text/javascript" async src="packages/mathjax/js/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="main.dart" type="application/dart"></script>
+        <script src="packages/browser/dart.js"></script>
+
+        <style>
+            .preview {
+                border:1px solid; padding: 3px; width:50%; margin-top:5px;
+            }
+            .hidden {
+                visibility:hidden; position:absolute; top:0; left: 0;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        Type text in the box below:<br/>
+        <textarea id="MathInput" cols="60" rows="3" style="margin-top:5px"></textarea>
+        <br/><br/>
+        Preview is shown here:
+        <div class="preview"></div>
+        <div id="MathPreview" class="preview"></div>
+    </body>
+</html>
