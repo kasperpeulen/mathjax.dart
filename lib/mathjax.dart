@@ -75,12 +75,9 @@ class MathJaxClass {
 
 @JS('MathJax.CallBack')
 class CallBackClass {
-  external set autoReset(bool value);
+  external void set autoReset(bool value);
   external bool get autoReset;
 }
-
-
-
 
 @JS('MathJax.Message')
 class MessageClass {
