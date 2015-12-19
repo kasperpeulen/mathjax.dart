@@ -20,7 +20,6 @@ import 'config.dart';
 /// [2]: https://mathjax.readthedocs.org/en/latest/callbacks.html#using-callbacks
 @JS('MathJax.Hub')
 class HubClass {
-
   external HubClass._();
 
   /// This holds the configuration parameters for MathJax. Set these values using
@@ -225,12 +224,8 @@ class RegisterClass {
   external LoadHook(file, callback);
 }
 
-
-
-
 @JS('MathJax.Hub.Browser')
 class BrowserClass {
-
   /// The browser version number, e.g., "4.0".
   external String get version;
 
@@ -278,8 +273,5 @@ class BrowserClass {
   external Select(choices);
 }
 
-
 @JS('MathJax.Queue')
-class QueueClass {
-
-}
+class QueueClass {}

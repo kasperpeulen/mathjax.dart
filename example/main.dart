@@ -7,10 +7,10 @@ import 'package:js/js.dart';
 void main() {
   MathJax.Hub.Config(new ConfigOptions(
       showProcessingMessages: false,
-      tex2jax: new TeX2Jax(
-          inlineMath: [[r'$',r'$'],[r'\(',r'\)']]
-      )
-  ));
+      tex2jax: new TeX2Jax(inlineMath: [
+        [r'$', r'$'],
+        [r'\(', r'\)']
+      ])));
 
   new MathJaxPreview(
       mathPreview: querySelector('#MathPreview'),
@@ -74,7 +74,8 @@ class MathJaxPreview {
     if (newText == _oldText || _mjRunning) return;
     _mjRunning = true;
     _bufferDiv.innerHtml = _oldText = newText;
-    MathJax.Hub.Queue(allowInterop(() => MathJax.Hub.Typeset(_bufferDiv)), allowInterop(_previewDone));
+    MathJax.Hub.Queue(allowInterop(() => MathJax.Hub.Typeset(_bufferDiv)),
+        allowInterop(_previewDone));
   }
 
   /// Indicate that MathJax is no longer running,

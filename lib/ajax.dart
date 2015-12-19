@@ -22,7 +22,6 @@ import 'package:js/js.dart';
 /// with MathJax documentation for details on how to do this properly.
 @JS('MathJax.Ajax')
 class AjaxClass {
-
   external AjaxClass._();
 
   /// Number of milliseconds to wait for a file to load before it is considered
