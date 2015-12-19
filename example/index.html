@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Dynamic Preview of Textarea with MathJax Content</title>
     <!-- Copyright (c) 2012-2015 The MathJax Consortium -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -20,29 +20,27 @@
     <script src="packages/browser/dart.js"></script>
 
     <style>
-        .preview {
-            border: 1px solid;
-            padding: 3px;
-            width: 50%;
-            margin-top: 5px;
-        }
+      .preview {
+        border: 1px solid;
+        padding: 3px;
+        width: 50%;
+        margin-top: 5px;
+      }
 
-        .hidden {
-            visibility: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+      .hidden {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     </style>
-
-
-</head>
-<body>
-Type text in the box below:<br/>
-<textarea id="MathInput" cols="60" rows="3" style="margin-top:5px"></textarea>
-<br/><br/>
-Preview is shown here:
-<div class="preview hidden"></div>
-<div id="MathPreview" class="preview"></div>
-</body>
+  </head>
+  <body>
+    Type text in the box below:<br/>
+    <textarea id="MathInput" cols="60" rows="3" style="margin-top:5px"></textarea>
+    <br/><br/>
+    Preview is shown here:
+    <div class="preview hidden"></div>
+    <div id="MathPreview" class="preview"></div>
+  </body>
 </html>
