@@ -23,7 +23,7 @@ void analyze() {
 
 @Task()
 void test() {
-  final platforms = ['dartium,firefox,chrome'];
+  final platforms = ['dartium,firefox,content-shell'];
   new TestRunner().test(platformSelector: platforms);
 }
 
