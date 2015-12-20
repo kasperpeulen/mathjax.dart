@@ -1,5 +1,5 @@
 name: mathjax
-description: Collection of useful functions for Directory objects.
+description: MathJax for dart
 author: Kasper Peulen <kasperpeulen@gmail.com>
 homepage: https://github.com/kasperpeulen/mathjax.dart
 version: 0.0.0
