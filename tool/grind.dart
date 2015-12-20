@@ -12,7 +12,7 @@ void main(List<String> args) {
 void prepush() {}
 
 @Task()
-@Depends(analyze, testdartfmt, coverage)
+@Depends(analyze, testdartfmt, test)
 void travis() {}
 
 @Task()
