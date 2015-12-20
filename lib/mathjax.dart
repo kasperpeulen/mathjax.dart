@@ -11,6 +11,10 @@ import 'ajax.dart';
 
 @JS('MathJax')
 
+hello() {
+  print("hello");
+}
+
 /// This class can't be initiated. The [MathJax] object is the only instance.
 class MathJaxClass {
   // class can't be initiated
