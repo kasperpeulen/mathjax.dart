@@ -10,7 +10,6 @@ import 'ajax.dart';
 @JS('MathJax') external MathJaxClass get MathJax;
 
 @JS('MathJax')
-
 hello() {
   print("hello");
 }
