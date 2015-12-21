@@ -11,6 +11,7 @@ void main() {
         [r'$', r'$'],
         [r'\(', r'\)']
       ])));
+  MathJax.Hub.Configured();
 
   new MathJaxPreview(
       mathPreview: querySelector('#MathPreview'),
