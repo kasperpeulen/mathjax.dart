@@ -37,7 +37,7 @@ class ConfigOptions {
   external get menuSettings;
   external get errorSettings;
   external get ignoreMMLattributes;
-
+  external get TeX;
   external factory ConfigOptions(
       {tex2jax,
       jax,
@@ -60,7 +60,9 @@ class ConfigOptions {
       showMathMenuMSIE,
       menuSettings,
       errorSettings,
-      ignoreMMLattributes});
+      ignoreMMLattributes,
+      TeX
+      });
 }
 
 @anonymous
@@ -88,4 +90,10 @@ class TeX2Jax {
       List<String> skipTags,
       String ignoreClass,
       String processClass});
+}
+
+@anonymous
+@JS()
+class TeX {
+  external factory TeX({extensions});
 }
