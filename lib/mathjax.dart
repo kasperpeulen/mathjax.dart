@@ -10,9 +10,6 @@ import 'ajax.dart';
 @JS('MathJax') external MathJaxClass get MathJax;
 
 @JS('MathJax')
-hello() {
-  print("hello");
-}
 
 /// This class can't be initiated. The [MathJax] object is the only instance.
 class MathJaxClass {

@@ -30,7 +30,7 @@ class AjaxClass {
   /// Default: 15 seconds
   external int get timeout;
 
-  external STATUSClass get STATUS;
+  external Status get STATUS;
 
   external get loaded;
 
@@ -40,7 +40,7 @@ class AjaxClass {
 }
 
 @JS('MathJax.Ajax.STATUS')
-class STATUSClass {
+class Status {
   external int get OK;
   external int get ERROR;
 }
