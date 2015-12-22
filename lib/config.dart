@@ -38,6 +38,9 @@ class ConfigOptions {
   external get errorSettings;
   external get ignoreMMLattributes;
   external get TeX;
+
+  external void operator []=(String key, value);
+
   external factory ConfigOptions(
       {tex2jax,
       jax,
@@ -78,6 +81,7 @@ class TeX2Jax {
   external List<String> get skipTags;
   external String get ignoreClass;
   external String get processClass;
+
 
   external factory TeX2Jax(
       {List<List<String>> inlineMath,
