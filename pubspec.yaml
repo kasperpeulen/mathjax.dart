@@ -2,11 +2,13 @@ name: mathjax
 description: MathJax for dart
 author: Kasper Peulen <kasperpeulen@gmail.com>
 homepage: https://github.com/kasperpeulen/mathjax.dart
-version: 0.0.3
+version: 0.0.6
 environment:
   sdk: '>=1.13.0 <2.0.0'
 dependencies:
   js: ^0.6.0
+  barback: '^0.15.2+7'
+  html: '^0.12.2+1'
 dev_dependencies:
   coverage: ^0.7.2
   dart_dev: ^1.0.5

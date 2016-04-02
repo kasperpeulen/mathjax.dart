@@ -39,8 +39,6 @@ class ConfigOptions {
   external get ignoreMMLattributes;
   external get TeX;
 
-  external void operator []=(String key, value);
-
   external factory ConfigOptions(
       {tex2jax,
       jax,
@@ -64,8 +62,7 @@ class ConfigOptions {
       menuSettings,
       errorSettings,
       ignoreMMLattributes,
-      TeX
-      });
+      TeX});
 }
 
 @anonymous
@@ -81,7 +78,6 @@ class TeX2Jax {
   external List<String> get skipTags;
   external String get ignoreClass;
   external String get processClass;
-
 
   external factory TeX2Jax(
       {List<List<String>> inlineMath,
@@ -100,4 +96,10 @@ class TeX2Jax {
 @JS()
 class TeX {
   external factory TeX({extensions});
+}
+
+@anonymous
+@JS()
+class HtmlCss {
+  external factory HtmlCss({preferredFont, availableFonts, bool showMathMenu});
 }

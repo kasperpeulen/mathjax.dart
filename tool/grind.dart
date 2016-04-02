@@ -8,7 +8,7 @@ void main(List<String> args) {
 }
 
 @DefaultTask()
-@Depends(analyze, format, coverage)
+@Depends(analyze, format, test, coverage)
 void prepush() {}
 
 @Task()

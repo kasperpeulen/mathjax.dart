@@ -1,7 +1,6 @@
 @TestOn('browser')
 import 'package:test/test.dart';
 import 'package:mathjax/mathjax.dart';
-import 'dart:math';
 
 void main() {
   group("MathJax", () {
@@ -16,11 +15,4 @@ void main() {
     });
   });
 
-  test('delayStartupUntil is set to configured by default', () {
-    expect(MathJax.Hub.config.delayStartupUntil, 'configured');
-  });
-
-  final point = const Point(2,3) + const Point(4,5) + const Point(2,3);
-
 }
-
