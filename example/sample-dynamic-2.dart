@@ -1,7 +1,6 @@
 import 'dart:html';
 import 'dart:async';
 import 'package:mathjax/mathjax.dart';
-import 'package:mathjax/config.dart';
 import 'package:js/js.dart';
 
 void main() {
